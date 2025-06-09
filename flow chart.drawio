@@ -1,0 +1,205 @@
+<mxfile host="65bd71144e">
+    <diagram id="K87WTb1zrh2VYzVALosg" name="主線程">
+        <mxGraphModel dx="1712" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="5" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="2" target="4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="開始" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="100" width="70" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="4" target="6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" style="edgeStyle=none;html=1;" edge="1" parent="1" source="4" target="9">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="建立主視窗(288 x 512)&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;設置背景(地面)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;設置鳥&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;設置開始菜單widget&lt;/font&gt;&lt;/div&gt;&lt;div&gt;連結主視窗與controller&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="170" width="170" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" style="edgeStyle=none;html=1;" parent="1" source="9" target="G-C8XdgEd5_Qfz3tZdOI-76" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="20" vertex="1" connectable="0">
+                    <mxGeometry x="-0.1" y="3" relative="1" as="geometry">
+                        <mxPoint x="-3" y="-1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="9" value="是否按下開始按鈕" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="279" y="370" width="144" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="GUI的更新與物件互動基於Qt自身事件循環，與遊戲線程獨立" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="80" width="170" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-30" style="edgeStyle=none;html=1;" parent="1" source="19" target="G-C8XdgEd5_Qfz3tZdOI-29" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-38" style="edgeStyle=none;html=1;" parent="1" source="19" target="G-C8XdgEd5_Qfz3tZdOI-35" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-80" style="edgeStyle=none;html=1;" parent="1" source="19" target="G-C8XdgEd5_Qfz3tZdOI-79" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="開始遊戲流程" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="285" y="690" width="135" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="widget :&amp;nbsp;&lt;a href=&quot;https://doc.qt.io/qt-6/qtwidgets-index.html&quot;&gt;https://doc.qt.io/qt-6/qtwidgets-index.html&lt;/a&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="190" width="270" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-41" style="edgeStyle=none;html=1;" parent="1" source="G-C8XdgEd5_Qfz3tZdOI-35" target="G-C8XdgEd5_Qfz3tZdOI-40" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-42" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="G-C8XdgEd5_Qfz3tZdOI-41" vertex="1" connectable="0">
+                    <mxGeometry x="-0.1588" y="-1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-44" style="edgeStyle=none;html=1;" parent="1" source="G-C8XdgEd5_Qfz3tZdOI-35" target="G-C8XdgEd5_Qfz3tZdOI-47" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="350" y="950" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-46" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="G-C8XdgEd5_Qfz3tZdOI-44" vertex="1" connectable="0">
+                    <mxGeometry x="-0.3971" y="-3" relative="1" as="geometry">
+                        <mxPoint x="-7" y="-2" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-35" value="是否點擊左鍵" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="283" y="810" width="137" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-45" style="edgeStyle=none;html=1;" parent="1" source="G-C8XdgEd5_Qfz3tZdOI-40" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="350" y="930" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="545" y="930"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-40" value="鳥&lt;span style=&quot;background-color: transparent;&quot;&gt;速度設為向上&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="490" y="835" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-50" style="edgeStyle=none;html=1;" parent="1" source="G-C8XdgEd5_Qfz3tZdOI-47" target="G-C8XdgEd5_Qfz3tZdOI-49" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-51" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="G-C8XdgEd5_Qfz3tZdOI-50" vertex="1" connectable="0">
+                    <mxGeometry x="-0.4118" y="4" relative="1" as="geometry">
+                        <mxPoint x="21" y="2" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-54" style="edgeStyle=none;html=1;" parent="1" source="G-C8XdgEd5_Qfz3tZdOI-47" target="G-C8XdgEd5_Qfz3tZdOI-53" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-47" value="是否撞到水管或地面" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="279" y="950" width="139" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-69" style="edgeStyle=none;html=1;" parent="1" source="G-C8XdgEd5_Qfz3tZdOI-49" target="G-C8XdgEd5_Qfz3tZdOI-68" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-49" value="中止水管生成循環&lt;div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;隱藏暫停按鈕&lt;br&gt;&lt;/font&gt;&lt;div&gt;顯示結束畫面widget&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="655" y="950" width="140" height="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-56" style="edgeStyle=none;html=1;" parent="1" source="G-C8XdgEd5_Qfz3tZdOI-53" target="G-C8XdgEd5_Qfz3tZdOI-55" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-61" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="G-C8XdgEd5_Qfz3tZdOI-56" vertex="1" connectable="0">
+                    <mxGeometry x="0.0968" y="1" relative="1" as="geometry">
+                        <mxPoint x="-5" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-64" style="edgeStyle=elbowEdgeStyle;html=1;" parent="1" source="G-C8XdgEd5_Qfz3tZdOI-53" target="G-C8XdgEd5_Qfz3tZdOI-35" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="230" y="1050"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-67" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="G-C8XdgEd5_Qfz3tZdOI-64" vertex="1" connectable="0">
+                    <mxGeometry x="-0.9261" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-53" value="是否通過水管" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="282.5" y="1100" width="137.5" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-55" value="加分&lt;div&gt;更新分數&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="460" y="1130" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-57" value="開始菜單widget :&lt;div&gt;開始按鈕&lt;/div&gt;&lt;div&gt;設置按鈕&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="260" width="140" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-58" value="結束畫面widget :&lt;div&gt;重新開始&lt;/div&gt;&lt;div&gt;設置按鈕&lt;/div&gt;&lt;div&gt;歷史最高分&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" parent="1" vertex="1">
+                    <mxGeometry x="655" y="870" width="140" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-65" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="-90" y="310" width="297.5" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-28" style="edgeStyle=none;html=1;" parent="G-C8XdgEd5_Qfz3tZdOI-65" source="6" target="G-C8XdgEd5_Qfz3tZdOI-27" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="啟動&lt;span style=&quot;background-color: transparent;&quot;&gt;捲動循環&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="G-C8XdgEd5_Qfz3tZdOI-65" vertex="1">
+                    <mxGeometry x="150" width="130" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-27" value="將背景加入捲動循環" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="G-C8XdgEd5_Qfz3tZdOI-65" vertex="1">
+                    <mxGeometry x="130" y="80" width="167.5" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-52" value="循環說的都是QTimer" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" parent="G-C8XdgEd5_Qfz3tZdOI-65" vertex="1">
+                    <mxGeometry y="22.5" width="140" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-71" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="G-C8XdgEd5_Qfz3tZdOI-68" target="G-C8XdgEd5_Qfz3tZdOI-70" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-72" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="G-C8XdgEd5_Qfz3tZdOI-71" vertex="1" connectable="0">
+                    <mxGeometry x="0.0182" y="-4" relative="1" as="geometry">
+                        <mxPoint x="-6" y="-4" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-68" value="是否按下&lt;div&gt;重新開始按鈕&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="665" y="1089" width="130" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-75" style="edgeStyle=elbowEdgeStyle;html=1;" parent="1" source="G-C8XdgEd5_Qfz3tZdOI-70" target="19" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="930" y="820"/>
+                            <mxPoint x="830" y="860"/>
+                            <mxPoint x="860" y="860"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-70" value="隱藏結束畫面widget&lt;div&gt;重製當前分數&lt;/div&gt;&lt;div&gt;重製鳥&lt;/div&gt;&lt;div&gt;啟動水管生成循環&lt;/div&gt;&lt;div&gt;顯示暫停按鈕&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="870" y="1090" width="140" height="99" as="geometry"/>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-77" style="edgeStyle=none;html=1;" parent="1" source="G-C8XdgEd5_Qfz3tZdOI-76" target="19" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-78" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="G-C8XdgEd5_Qfz3tZdOI-77" vertex="1" connectable="0">
+                    <mxGeometry x="-0.05" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-76" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;移除開始菜單widget&lt;/span&gt;&lt;div&gt;設置暫停按鈕&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="302.5" y="590" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-84" style="edgeStyle=none;html=1;" parent="1" source="G-C8XdgEd5_Qfz3tZdOI-79" target="G-C8XdgEd5_Qfz3tZdOI-82" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-79" value="啟動鳥下墜循環" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="-12.310000000000002" y="885" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-82" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;鳥移動&lt;/span&gt;&lt;div&gt;賦予加速度&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="-12.310000000000002" y="950" width="100" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-32" style="edgeStyle=none;html=1;" parent="1" source="G-C8XdgEd5_Qfz3tZdOI-29" target="G-C8XdgEd5_Qfz3tZdOI-31" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-29" value="啟動水管生成循環" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="-20.001111111111115" y="720" width="107.69111111111111" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="G-C8XdgEd5_Qfz3tZdOI-31" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;生成水管&lt;/span&gt;&lt;div&gt;加入捲動循環&lt;/div&gt;&lt;div&gt;移除在畫面外的水管&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="-20.001111111111115" y="780" width="107.69111111111111" height="70" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
