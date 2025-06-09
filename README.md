@@ -11,7 +11,7 @@
 圖好難畫
 
 ### 成品
-result檔案夾內有已經編譯好的 .exe檔  跟必要的驅動
+result檔案夾內有已經編譯好的 .exe檔跟必要的驅動  
 .exe不能執行的話(我不知道wine行不行)，執行以下指令
 ```bash
 docker build -t assign7 .
