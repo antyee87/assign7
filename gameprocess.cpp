@@ -105,7 +105,6 @@ void GameProcess::Start() {
     menu = new GetReadyMenu(main_window);
     menu->show();
 
-    flappy_bird->setRotation(0);
     flappy_bird->setSpeed(0);
     flappy_bird->move(
         QPoint(MAP_SIZE.width() / 4 - BIRD_SIZE.width() / 2,

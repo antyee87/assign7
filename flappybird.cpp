@@ -17,12 +17,7 @@ void FlappyBird::setType(int type) {
 
 void FlappyBird::flapping() {
     std::string path = ":/resources/image/bird" + std::to_string(type) + "_" + std::to_string(state) + ".png";
-    QPixmap original = QPixmap(path.c_str());
-    QTransform transform;
-    transform.rotate(rotation);
-    QPixmap rotated = original.transformed(transform, Qt::SmoothTransformation);
-    setPixmap(rotated);
-    resize(rotated.size());
+    setPixmap(QPixmap(path.c_str()));
     ++state;
     if (state > 2) state = 0;
 }
