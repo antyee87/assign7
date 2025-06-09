@@ -21,4 +21,8 @@ docker run --rm -it -p 3000:3000 --user root assign7 bash
 ```bash
 localhost:3000
 ```
+執行
+```bash
+/app/build/assign7
+```
 但這樣不會有聲音，不知道怎麼解決
