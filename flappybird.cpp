@@ -7,6 +7,7 @@ FlappyBird::FlappyBird(QWidget* parent)
     :ResizeablePicture(parent) {
     flapping_timer = new QTimer();
     connect(flapping_timer, &QTimer::timeout, this, &FlappyBird::flapping);
+    is_flapping = true;
     flapping_timer->start(200);
 }
 
@@ -26,13 +27,6 @@ void FlappyBird::flapping() {
     if (state > 2) state = 0;
 }
 
-void FlappyBird::setRotation(double rotation) {
-    this->rotation = rotation;
-}
-
-double FlappyBird::getRotation() const{
-    return rotation;
-}
 
 void FlappyBird::setSpeed(double speed) {
     this->speed = speed;
@@ -40,4 +34,10 @@ void FlappyBird::setSpeed(double speed) {
 
 double FlappyBird::getSpeed() const{
     return speed;
+}
+
+void FlappyBird::toggleFlapping() {
+    if (is_flapping) flapping_timer->stop();
+    else flapping_timer->start(200);
+    is_flapping = !is_flapping;
 }

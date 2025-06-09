@@ -12,6 +12,13 @@
 #include "flappybird.h"
 #include "scoredisplay.h"
 
+const int GROUND_AMOUNT = 2;
+const QSize MAP_SIZE = QSize(288, 400);
+const QSize BIRD_SIZE = QSize(34, 24);
+const int MARGIN = 80;
+const int HOLE_HEIGHT = 100;
+const int MSPF = 16;
+
 class GameProcess : public QObject
 {
     Q_OBJECT
@@ -51,13 +58,6 @@ private:
     int last_hole_pos = -1;
 
     void End();
-
-    const int GROUND_AMOUNT = 2;
-    const QSize MAP_SIZE = QSize(288, 400);
-    const QSize BIRD_SIZE = QSize(34, 24);
-    const int MARGIN = 80;
-    const int HOLE_HEIGHT = 100;
-    const int MSPF = 16;
 };
 
 #endif // GAMEPROCESS_H

@@ -204,6 +204,7 @@ void GameProcess::mousePressEvent(QMouseEvent* event) {
 
 void GameProcess::End() {
     best_score = std::max(score, best_score);
+    flappy_bird->toggleFlapping();
 
     score_display->hide();
     menu->deleteLater();
@@ -245,6 +246,7 @@ void GameProcess::Restart() {
         obstacles.erase(widget);
     }
 
+    flappy_bird->toggleFlapping();
     scroll_timer->start(scroll_interval);
     fly_timer->stop();
     Start();
